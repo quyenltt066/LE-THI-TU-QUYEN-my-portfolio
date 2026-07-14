@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lê Thị Tú Quyên</title>
     
+    <!-- Tích hợp FontAwesome cho icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Tích hợp Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* CSS Variables cho bảng màu chuyên nghiệp */
         :root {
-            --primary-color: #2E7D32; /* Xanh lá đậm - Nông nghiệp */
-            --secondary-color: #4CAF50; /* Xanh lá sáng */
+            --primary-color: #2E7D32; 
+            --secondary-color: #4CAF50; 
             --bg-color: #FAFAFA;
             --text-main: #333333;
             --text-muted: #666666;
@@ -21,7 +22,6 @@
             --transition: all 0.3s ease;
         }
 
-        /* Reset cơ bản */
         * {
             margin: 0;
             padding: 0;
@@ -36,7 +36,6 @@
             line-height: 1.6;
         }
 
-        /* Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -65,7 +64,6 @@
             padding: 80px 0;
         }
 
-        /* HEADER & NAVIGATION */
         header {
             position: fixed;
             top: 0;
@@ -106,7 +104,6 @@
             color: var(--secondary-color);
         }
 
-        /* HERO SECTION */
         .hero {
             height: 100vh;
             display: flex;
@@ -171,7 +168,6 @@
             color: var(--white);
         }
 
-        /* ABOUT SECTION */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -203,7 +199,6 @@
             width: 20px;
         }
 
-        /* SKILLS SECTION */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -230,7 +225,6 @@
             margin-bottom: 15px;
         }
 
-        /* PORTFOLIO SECTION */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -253,7 +247,7 @@
         .portfolio-img {
             width: 100%;
             height: 200px;
-            background: #ddd; /* Placeholder background */
+            background: #ddd; 
             object-fit: cover;
         }
 
@@ -266,7 +260,6 @@
             margin-bottom: 10px;
         }
 
-        /* CONTACT SECTION */
         .contact-wrapper {
             max-width: 600px;
             margin: 0 auto;
@@ -301,7 +294,6 @@
             transform: translateY(-5px);
         }
 
-        /* FOOTER */
         footer {
             background: var(--text-main);
             color: var(--white);
@@ -309,7 +301,6 @@
             padding: 20px 0;
         }
 
-        /* ANIMATION CLASS */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -321,7 +312,6 @@
             transform: translateY(0);
         }
 
-        /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .about-grid {
                 grid-template-columns: 1fr;
@@ -334,7 +324,7 @@
                 justify-content: center;
             }
             .nav-links {
-                display: none; /* Trong thực tế sẽ cần làm menu hamburger cho mobile */
+                display: none; 
             }
             .hero h1 {
                 font-size: 2.5rem;
@@ -363,9 +353,9 @@
         <div class="container">
             <div class="hero-content">
                 <p>Xin chào, tôi là</p>
-                <h1>LÊ THỊ TÚ QUYÊN [cite: 6]</h1>
-                <h2>Phát triển vùng nguyên liệu Organic [cite: 7]</h2>
-                <p>Quản lý truy xuất nguồn gốc & Hệ thống Kiểm soát Nội bộ (ICS). Hơn 7 năm kinh nghiệm với các tiêu chuẩn quốc tế. [cite: 10]</p>
+                <h1>LÊ THỊ TÚ QUYÊN</h1>
+                <h2>Phát triển vùng nguyên liệu Organic</h2>
+                <p>Quản lý truy xuất nguồn gốc & Hệ thống Kiểm soát Nội bộ (ICS). Hơn 7 năm kinh nghiệm với các tiêu chuẩn quốc tế.</p>
                 <a href="#contact" class="btn btn-primary">Liên hệ ngay</a>
                 <a href="https://linkedin.com" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
@@ -380,16 +370,16 @@
                     <img src="images/avatar.jpg" alt="Ảnh chân dung Lê Thị Tú Quyên">
                 </div>
                 <div class="about-content">
-                    <h3>Trưởng đơn vị truy xuất nguồn gốc & quản lý ICS [cite: 54]</h3>
-                    <p>Tích cực, hòa đồng, ham học hỏi, thích vượt qua thử thách và thực sự quan tâm đến việc ứng dụng công nghệ trong quản lý truy xuất nguồn gốc và kiểm soát nội bộ. [cite: 9]</p>
-                    <p>Có kinh nghiệm 7 năm thực hiện các chứng nhận hữu cơ như: EU, NOP, JAS, FAIRTRADE, GLOBAL GAP, NATULAND... [cite: 10]</p>
-                    <p>Học vấn: Khoa học cây trồng | Đại học Cần Thơ (Xếp loại: Giỏi). [cite: 79, 80]</p>
+                    <h3>Trưởng đơn vị truy xuất nguồn gốc & quản lý ICS</h3>
+                    <p>Tích cực, hòa đồng, ham học hỏi, thích vượt qua thử thách và thực sự quan tâm đến việc ứng dụng công nghệ trong quản lý truy xuất nguồn gốc và kiểm soát nội bộ.</p>
+                    <p>Có kinh nghiệm 7 năm thực hiện các chứng nhận hữu cơ như: EU, NOP, JAS, FAIRTRADE, GLOBAL GAP, NATULAND...</p>
+                    <p>Học vấn: Khoa học cây trồng | Đại học Cần Thơ (Xếp loại: Giỏi).</p>
                     
                     <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> quyenltt066@gmail.com [cite: 2]</li>
-                        <li><i class="fas fa-phone"></i> 0907032258 [cite: 4]</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Bến Tre [cite: 3]</li>
-                        <li><i class="fas fa-birthday-cake"></i> 1995 [cite: 5]</li>
+                        <li><i class="fas fa-envelope"></i> quyenltt066@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 0907032258</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bến Tre</li>
+                        <li><i class="fas fa-birthday-cake"></i> 1995</li>
                     </ul>
                 </div>
             </div>
@@ -403,23 +393,23 @@
                 <div class="skill-card">
                     <i class="fas fa-desktop"></i>
                     <h3>Phần mềm & Ứng dụng</h3>
-                    <p>Word/Excel/Pivot excel/Canva/FRM [cite: 13]</p>
+                    <p>Word/Excel/Pivot excel/Canva/FRM</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-users"></i>
                     <h3>Quản lý & Hợp tác</h3>
-                    <p>Làm việc nhóm [cite: 14]</p>
-                    <p>Lập kế hoạch/Quản lý đội nhóm [cite: 15]</p>
+                    <p>Làm việc nhóm</p>
+                    <p>Lập kế hoạch/Quản lý đội nhóm</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-language"></i>
                     <h3>Ngôn ngữ</h3>
-                    <p>Tiếng anh giao tiếp [cite: 18]</p>
+                    <p>Tiếng anh giao tiếp</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-certificate"></i>
                     <h3>Chuyên môn</h3>
-                    <p>Quản lý Hệ thống Kiểm soát Nội bộ (ICS) [cite: 58]</p>
+                    <p>Quản lý Hệ thống Kiểm soát Nội bộ (ICS)</p>
                 </div>
             </div>
         </div>
@@ -433,36 +423,36 @@
                 <div class="portfolio-card">
                     <img src="images/project-fairtrade.jpg" alt="Dự án Fairtrade" class="portfolio-img">
                     <div class="portfolio-info">
-                        <h3>Dự án Fairtrade HTX địa phương [cite: 111]</h3>
-                        <p><strong>Thời gian:</strong> 2024 - 2025 [cite: 110]</p>
-                        <p>Leader dự án, quản lý timeline, nhân sự, chi phí, hợp tác với cán bộ địa phương, tập huấn kiến thức chứng nhận cho Hợp tác xã. [cite: 112]</p>
+                        <h3>Dự án Fairtrade HTX địa phương</h3>
+                        <p><strong>Thời gian:</strong> 2024 - 2025</p>
+                        <p>Leader dự án, quản lý timeline, nhân sự, chi phí, hợp tác với cán bộ địa phương, tập huấn kiến thức chứng nhận cho Hợp tác xã.</p>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
                     <img src="images/project-organic.jpg" alt="Dự án vùng nguyên liệu Organic" class="portfolio-img">
                     <div class="portfolio-info">
-                        <h3>Vùng nguyên liệu Dừa Organic [cite: 91]</h3>
-                        <p><strong>Thời gian:</strong> 2019 - 2025 [cite: 90]</p>
-                        <p>Khảo sát và tham gia đánh giá vùng nguyên liệu Dừa Organic nâng quy mô từ 4.000 ha lên 15.000 ha. Lập kế hoạch kiểm soát tiến độ. [cite: 91, 92]</p>
+                        <h3>Vùng nguyên liệu Dừa Organic</h3>
+                        <p><strong>Thời gian:</strong> 2019 - 2025</p>
+                        <p>Khảo sát và tham gia đánh giá vùng nguyên liệu Dừa Organic nâng quy mô từ 4.000 ha lên 15.000 ha. Lập kế hoạch kiểm soát tiến độ.</p>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
                     <img src="images/project-frm.jpg" alt="Dự án FRM" class="portfolio-img">
                     <div class="portfolio-info">
-                        <h3>Farmer Relationship Management [cite: 108]</h3>
-                        <p><strong>Thời gian:</strong> 2023 - 2024 [cite: 106, 107]</p>
-                        <p>Đảm nhiệm vị trí Key User cho dự án hệ thống quản lý quan hệ nông dân (FRM). [cite: 109]</p>
+                        <h3>Farmer Relationship Management</h3>
+                        <p><strong>Thời gian:</strong> 2023 - 2024</p>
+                        <p>Đảm nhiệm vị trí Key User cho dự án hệ thống quản lý quan hệ nông dân (FRM).</p>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
                     <img src="images/project-model.jpg" alt="Mô hình mẫu sản xuất" class="portfolio-img">
                     <div class="portfolio-info">
-                        <h3>Mô hình mẫu sản xuất dừa hữu cơ [cite: 114, 115]</h3>
-                        <p><strong>Thời gian:</strong> 2024 - 2027 [cite: 113]</p>
-                        <p>Xây dựng mô hình chuẩn sản xuất dừa theo tiêu chuẩn hữu cơ tại một số tỉnh Duyên hải ĐBSCL. [cite: 114, 115]</p>
+                        <h3>Mô hình mẫu sản xuất dừa hữu cơ</h3>
+                        <p><strong>Thời gian:</strong> 2024 - 2027</p>
+                        <p>Xây dựng mô hình chuẩn sản xuất dừa theo tiêu chuẩn hữu cơ tại một số tỉnh Duyên hải ĐBSCL.</p>
                     </div>
                 </div>
 
@@ -489,7 +479,6 @@
     </footer>
 
     <script>
-        // Hiệu ứng Fade-in khi cuộn trang
         document.addEventListener("DOMContentLoaded", function() {
             const faders = document.querySelectorAll('.fade-in');
 
