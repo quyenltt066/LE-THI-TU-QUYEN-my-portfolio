@@ -103,41 +103,55 @@
             color: var(--secondary-color);
         }
 
-        /* --- HERO SECTION (HƯỚNG 1: KHÔNG MÀNG LỌC, CHỮ MÀU TỐI) --- */
+        /* --- HERO SECTION CẬP NHẬT TƯƠNG PHẢN & CANH ĐỀU --- */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
-            /* Gỡ bỏ màng lọc đen, giữ nguyên ảnh gốc */
+            justify-content: center; /* Đưa khối nội dung ra giữa màn hình */
             background: url('images/hero-bg.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             padding-top: 80px;
+
+       .hero-content {
+            max-width: 750px; /* Giới hạn độ rộng để đoạn văn dễ đọc hơn */
+            text-align: left;
         }
 
-        .hero-content {
-            max-width: 600px;
+        .hero p.hero-greeting {
+            font-size: 1.1rem;
+            color: #1A1A1A;
+            font-weight: 600;
+            margin-bottom: 5px;
+            /* Lớp bóng trắng mờ giúp tách chữ khỏi nền */
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9); 
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             margin-bottom: 10px;
-            color: #1B4332; /* Xanh rêu đậm */
+            color: #143623; /* Đổi sang màu Xanh đen cực đậm */
+            text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 0px 0px 5px rgba(255, 255, 255, 0.5);
         }
 
         .hero h2 {
             font-size: 1.8rem;
-            color: #2E7D32; /* Xanh lá tiêu chuẩn */
-            margin-bottom: 20px;
+            color: #248A37; /* Xanh lá chuẩn, sáng */
+            margin-bottom: 25px;
             font-weight: 600;
+            text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.9);
         }
 
         .hero p.hero-desc {
-            font-size: 1.1rem;
-            color: #333333; /* Xám than đậm */
-            margin-bottom: 30px;
-            font-weight: 600; /* Làm chữ dày lên chống chìm */
+            font-size: 1.15rem;
+            color: #1A1A1A; /* Đen gần tuyệt đối */
+            margin-bottom: 35px;
+            font-weight: 500;
+            line-height: 1.7;
+            text-align: justify; /* LỆNH CANH ĐỀU VĂN BẢN HAI BÊN */
+            text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9), 0px 0px 8px rgba(255, 255, 255, 0.6);
         }
 
         .btn {
