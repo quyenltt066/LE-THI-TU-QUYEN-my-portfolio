@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lê Thị Tú Quyên</title>
     
-    <!-- Tích hợp FontAwesome cho icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tích hợp Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -64,11 +61,13 @@
             padding: 80px 0;
         }
 
+        /* --- HEADER --- */
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: var(--white);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 1000;
         }
@@ -104,11 +103,16 @@
             color: var(--secondary-color);
         }
 
+        /* --- HERO SECTION (HƯỚNG 1: KHÔNG MÀNG LỌC, CHỮ MÀU TỐI) --- */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(241, 248, 233, 0.8) 0%, rgba(200, 230, 201, 0.8) 100%);
+            /* Gỡ bỏ màng lọc đen, giữ nguyên ảnh gốc */
+            background: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding-top: 80px;
         }
 
@@ -119,20 +123,21 @@
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
-            color: var(--text-main);
+            color: #1B4332; /* Xanh rêu đậm */
         }
 
         .hero h2 {
             font-size: 1.8rem;
-            color: var(--primary-color);
+            color: #2E7D32; /* Xanh lá tiêu chuẩn */
             margin-bottom: 20px;
-            font-weight: 400;
+            font-weight: 600;
         }
 
-        .hero p {
+        .hero p.hero-desc {
             font-size: 1.1rem;
-            color: var(--text-muted);
+            color: #333333; /* Xám than đậm */
             margin-bottom: 30px;
+            font-weight: 600; /* Làm chữ dày lên chống chìm */
         }
 
         .btn {
@@ -146,28 +151,30 @@
         }
 
         .btn-primary {
-            background: var(--primary-color);
+            background: var(--secondary-color);
             color: var(--white);
-            border: 2px solid var(--primary-color);
+            border: 2px solid var(--secondary-color);
         }
 
         .btn-primary:hover {
             background: transparent;
-            color: var(--primary-color);
+            color: var(--secondary-color);
         }
 
+        /* Nút outline đổi sang màu tối để nổi bật trên nền sáng */
         .btn-outline {
             background: transparent;
-            color: var(--primary-color);
-            border: 2px solid var(--primary-color);
+            color: #1B4332;
+            border: 2px solid #1B4332;
             margin-left: 15px;
         }
 
         .btn-outline:hover {
-            background: var(--primary-color);
+            background: #1B4332;
             color: var(--white);
         }
 
+        /* --- CÁC PHẦN CÒN LẠI GIỮ NGUYÊN --- */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -337,7 +344,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">LT. Quyên</a>
+                <a href="#" class="logo">Lê Thị Tú Quyên</a>
                 <ul class="nav-links">
                     <li><a href="#home">Trang chủ</a></li>
                     <li><a href="#about">Giới thiệu</a></li>
@@ -352,11 +359,11 @@
     <section id="home" class="hero fade-in">
         <div class="container">
             <div class="hero-content">
-                <p>Xin chào, tôi là</p>
+                <p style="color: #333333; font-weight: 600;">Xin chào, tôi là</p>
                 <h1>LÊ THỊ TÚ QUYÊN</h1>
-                <h2>Phát triển vùng nguyên liệu Organic</h2>
-                <p>Quản lý truy xuất nguồn gốc & Hệ thống Kiểm soát Nội bộ (ICS). Hơn 7 năm kinh nghiệm với các tiêu chuẩn quốc tế.</p>
-                <a href="#contact" class="btn btn-primary">Liên hệ ngay</a>
+                <h2>Organic • Traceability • Sustainability</h2>
+                <p class="hero-desc">Đồng hành cùng doanh nghiệp xây dựng vùng nguyên liệu Organic đạt chuẩn quốc tế thông qua chiến lược phát triển vùng trồng, hệ thống ICS, truy xuất nguồn gốc và quản lý chứng nhận. Mỗi vùng nguyên liệu không chỉ đáp ứng yêu cầu kiểm định mà còn tạo giá trị bền vững cho doanh nghiệp và cộng đồng nông dân.</p>
+                <a href="#about" class="btn btn-primary">Giới thiệu</a>
                 <a href="https://linkedin.com" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
@@ -372,7 +379,7 @@
                 <div class="about-content">
                     <h3>Trưởng đơn vị truy xuất nguồn gốc & quản lý ICS</h3>
                     <p>Tích cực, hòa đồng, ham học hỏi, thích vượt qua thử thách và thực sự quan tâm đến việc ứng dụng công nghệ trong quản lý truy xuất nguồn gốc và kiểm soát nội bộ.</p>
-                    <p>Có kinh nghiệm 7 năm thực hiện các chứng nhận hữu cơ như: EU, NOP, JAS, FAIRTRADE, GLOBAL GAP, NATULAND...</p>
+                    <p>Có kinh nghiệm 8 năm dẫn dắt việc triển khai và quản lý các chương trình chứng nhận hữu cơ và bền vững: EU, NOP, JAS, FAIRTRADE, GLOBAL GAP, NATULAND, CHINA, KOREA, TAIWAN, RA...</p>
                     <p>Học vấn: Khoa học cây trồng | Đại học Cần Thơ (Xếp loại: Giỏi).</p>
                     
                     <ul class="contact-info">
@@ -409,7 +416,7 @@
                 <div class="skill-card">
                     <i class="fas fa-certificate"></i>
                     <h3>Chuyên môn</h3>
-                    <p>Quản lý Hệ thống Kiểm soát Nội bộ (ICS)</p>
+                    <p>Quản lý Hệ thống Truy xuất nguồn gốc và Kiểm soát Nội bộ (ICS)</p>
                 </div>
             </div>
         </div>
